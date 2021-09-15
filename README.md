@@ -45,10 +45,5 @@ the subscriber afterwards.
 Mono : Producer can generate 0 or 1 element.
 Flux : Subscriber generate 0 or n elements.
 
-## Mono
-Mono can be created in any of the following ways,
-- Just : It should be used when we already have the data in hand.
-- fromSupplier/ fromCallable/ fromRunnable : It should be used when we need to calculate the data in each call.
-
 Here building data pipeline is separated from the execution. 
- 
+
