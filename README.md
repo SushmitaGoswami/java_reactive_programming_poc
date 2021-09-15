@@ -40,3 +40,15 @@ representable problem statement which makes the code much more readable along wi
 4. Whenever, the subscriber is no longer interested to receive any item from the producer, it will call the onComplete method to close the connection.
 5. Whenever, any error occurrs while producing the data at the producer end, producer will call the onError method of the subscriber and no more data will be pushed to 
 the subscriber afterwards.
+
+## Mono & Flux
+Mono : Producer can generate 0 or 1 element.
+Flux : Subscriber generate 0 or n elements.
+
+## Mono
+Mono can be created in any of the following ways,
+- Just : It should be used when we already have the data in hand.
+- fromSupplier/ fromCallable/ fromRunnable : It should be used when we need to calculate the data in each call.
+
+Here building data pipeline is separated from the execution. 
+ 
