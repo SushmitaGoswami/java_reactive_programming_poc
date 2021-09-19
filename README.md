@@ -47,3 +47,5 @@ Flux : Subscriber generate 0 or n elements.
 
 Here building data pipeline is separated from the execution. 
 
+## Terminologies
+1. FluxSink : It is used to create and emit object programmtically.
